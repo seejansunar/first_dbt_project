@@ -1,10 +1,8 @@
 Welcome to your new dbt project!
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+```
+dbt init [project-name]
+```
 
 ### Configure profiles.yml
 I am configuring for snowflake, you can use for bigquery, postgres, etc.
@@ -33,6 +31,14 @@ my-snowflake-db:
       connect_timeout: 10 # default: 10
       retry_on_database_errors: False # default: false 
       retry_all: False  # default: false
+```
+
+```
+dbt debug
+```
+
+```
+dbt run
 ```
 
 ### Resources:
